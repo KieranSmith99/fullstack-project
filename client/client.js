@@ -1,5 +1,3 @@
-console.log("Hello World");
-
 const form = document.querySelector('form');
 const loadingElement = document.querySelector('.loading');
 const API_URL = "http://localhost:5000/message";
@@ -34,7 +32,7 @@ form.addEventListener('submit', (event) => {
             form.reset();
             setTimeout(() => {
                 form.style.display = '';
-            }, 30000);
+            }, 10000);
             listAllMessages();
         });
 });
